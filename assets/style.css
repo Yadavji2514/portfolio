@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+:root {
+  --background: #0a192f;
+  --heading: #ccd6f6;
+  --text: #8892b0;
+  --cards: #233554;
+  --contrast: #64ffda;
+}
+.fira-mono-font {
+  font-family: "Fira Mono", monospace;
+  font-style: normal;
+}
+.noto-sans-font {
+  font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+h1 {
+  font-size: 56px;
+}
+h2 {
+  font-size: 42px;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+body {
+  background-color: var(--background);
+}
+header {
+  position: sticky;
+  top: 0px;
+  background-color: rgba(10, 25, 47, 0.85);
+  box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.452);
+  z-index: 1000;
+}
+.logo-container {
+  width: 42px;
+  color: var(--contrast);
+}
+svg {
+  fill: var(--background);
+}
+nav {
+  padding: 30px 50px;
+  display: flex;
+  justify-content: space-between;
+}
+nav ul {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  width: 60%;
+  justify-content: space-between;
+}
+nav ul li {
+  justify-self: center;
+  font-size: 16px;
+}
+nav ul li a {
+  color: var(--heading);
+}
+nav ul li a:hover {
+  transition: all ease-in-out 0.5s;
+  color: var(--contrast);
+}
+.numbering {
+  color: var(--contrast);
+}
+.resume-btn {
+  display: inline-block;
+  color: var(--contrast);
+  border: 1px solid var(--contrast);
+  padding: 10px 15px;
+  border-radius: 5px;
+  line-height: 1;
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.resume-btn:hover {
+  outline: none;
+  transform: translate(-5px, -5px);
+  box-shadow: 4px 4px var(--contrast);
+}
+main {
+  display: flex;
+}
+.left {
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: self-end;
+  position: fixed;
+  z-index: 1;
+  height: -webkit-fill-available;
+  padding-bottom: 30px;
+}
+.social-logo {
+  width: 30px;
+  color: var(--text);
+  transition: all ease-in-out 0.3s;
+}
+.social-logo:hover {
+  color: var(--contrast);
+  transform: scale(1.2);
+}
+.facebook-logo {
+  width: 30px;
+  fill: var(--text);
+  transition: all ease-in-out 0.3s;
+}
+.facebook-logo:hover {
+  fill: var(--contrast);
+  transform: scale(1.2);
+}
+.social-container {
+  list-style-type: none;
+}
+.social-container li {
+  margin-top: 15px;
+}
+.right {
+  width: 10%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+  height: -webkit-fill-available;
+  padding-bottom: 30px;
+  letter-spacing: 0.1em;
+  writing-mode: vertical-rl;
+  left: auto;
+  right: 30px;
+}
+.right a {
+  color: var(--text);
+  font-size: 16px;
+}
+.right a:hover {
+  color: var(--contrast);
+  transform: translateY(-3px);
+}
+.main-area {
+  width: 100%;
+  padding: 0 200px;
+}
+.intro {
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.welcome-msg {
+  color: var(--contrast);
+  font-size: 20px;
+  margin-top: -50px;
+}
+.name {
+  color: var(--heading);
+  margin-top: 30px;
+}
+.role {
+  color: var(--text);
+}
+.short-intro {
+  color: var(--text);
+  text-align: justify;
+  margin-top: 30px;
+  width: 40%;
+}
+.intro-btn-container {
+  margin-top: 70px;
+}
+.intro-btn {
+  display: inline-block;
+  color: var(--contrast);
+  border: 1px solid var(--contrast);
+  padding: 10px 30px;
+  border-radius: 5px;
+  line-height: 1;
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.intro-btn:hover {
+  outline: none;
+  transform: translate(-5px, -5px);
+  box-shadow: 4px 4px var(--contrast);
+}
+.section-head {
+  color: var(--heading);
+}
+.about{
+  padding-top: 115px;
+}
+.my-self-text-container {
+  width: 65%;
+  color: var(--text);
+}
+.my-self {
+  text-align: justify;
+  margin-top: 20px;
+}
+.technology {
+  list-style-type: none;
+  font-size: 14px;
+}
+.technology li::before {
+  content: "▹  ";
+  color: var(--contrast);
+}
+.qualification{
+  padding-top: 115px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+.qualification-btns-container{
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+button{
+  background-color: var(--background);
+  color: var(--text);
+  font-family: "Fira Mono", monospace;
+  font-style: normal;
+  font-size: 16px;
+  border: none;
+  border-right: 2px solid var(--text);
+  width: 150px;
+  height: 50px;
+  padding-top: 10px;
+}
+button:hover{
+  color: var(--contrast);
+  background: var(--cards);
+}
+.active-btn{
+  color: var(--contrast);
+  background: var(--cards);
+  border-right: 2px solid var(--contrast);
+}
