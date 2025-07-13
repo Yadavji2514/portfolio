@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rishi Kumar Yadav</title>
     <link rel="stylesheet" href="./assets/style.css" />
+    <link rel="icon" href="./assets/images/logo.svg" type="image/png">
   </head>
 
   <body>
-    <header>
+    <header class="animate-on-scroll fade-in-left">
       <nav>
         <a href="./index.html">
           <div class="logo-container">
@@ -70,10 +71,10 @@
     </header>
 
     <main>
-      <div class="left">
+      <div class="left animate-on-scroll fade-in-up">
         <ul class="social-container">
           <li>
-            <a href="" aria-label="GitHub" target="_blank" rel="noreferrer"
+            <a href="https://github.com/Yadavji2514" aria-label="GitHub" target="_blank" rel="noreferrer"
               ><svg
                 xmlns="http://www.w3.org/2000/svg"
                 role="img"
@@ -92,7 +93,7 @@
             ></a>
           </li>
           <li>
-            <a href="" aria-label="Instagram" target="_blank" rel="noreferrer"
+            <a href="https://www.instagram.com/yadavji.1425" aria-label="Instagram" target="_blank" rel="noreferrer"
               ><svg
                 xmlns="http://www.w3.org/2000/svg"
                 role="img"
@@ -113,7 +114,7 @@
             ></a>
           </li>
           <li>
-            <a href="" aria-label="Facebook" target="_blank" rel="noreferrer"
+            <a href="https://www.facebook.com/yadavji2514/" aria-label="Facebook" target="_blank" rel="noreferrer"
               ><svg
                 xmlns="http://www.w3.org/2000/svg"
                 role="img"
@@ -128,7 +129,7 @@
             </a>
           </li>
           <li>
-            <a href="" aria-label="Linkedin" target="_blank" rel="noreferrer"
+            <a href="https://www.linkedin.com/in/rishi-kumar-yadav-99404b1b8/" aria-label="Linkedin" target="_blank" rel="noreferrer"
               ><svg
                 xmlns="http://www.w3.org/2000/svg"
                 role="img"
@@ -150,70 +151,204 @@
           </li>
         </ul>
       </div>
-      <div class="right fira-mono-font">
+      <div class="right fira-mono-font animate-on-scroll fade-in-up">
         <a href="mailto:rsy81179105@gmail.com">rsy81179105@gmail.com</a>
       </div>
       <div class="main-area">
         <section id="intro" class="intro">
           <div class="welcome-msg noto-sans-font">Hi, my name is,</div>
-          <div class="name noto-sans-font">
+          <div class="name noto-sans-font animate-on-scroll fade-in-left">
             <h1>Rishi Kumar Yadav.</h1>
           </div>
-          <div class="role noto-sans-font">
+          <div class="role noto-sans-font animate-on-scroll fade-in-left">
             <h2>Front End Designer and Developer.</h2>
           </div>
-          <div class="short-intro noto-sans-font">
+          <div class="short-intro noto-sans-font animate-on-scroll fade-in-up">
             <p>
               I enjoy turning ideas into real web pages using HTML, CSS, and
               JavaScript. I'm always exploring new tools and improving my skills
               to grow as a developer.
             </p>
           </div>
-          <div class="intro-btn-container noto-sans-font">
-            <a href="" class="intro-btn">Know More</a>
+          <div
+            class="intro-btn-container noto-sans-font animate-on-scroll fade-in-up"
+          >
+            <a href="#about" class="intro-btn">Know More</a>
           </div>
         </section>
 
         <section id="about" class="about section-head">
-          <h2 class="fira-mono-font">
+          <h2 class="fira-mono-font animate-on-scroll fade-in-up">
             <span class="numbering">01.</span> About Me
           </h2>
           <div class="my-self-text-container">
-            <p class="noto-sans-font my-self">
+            <p class="noto-sans-font my-self animate-on-scroll fade-in-up">
               Hello, My name is Rishi Kumar Yadav, I'm a front-end designer and
               developer who enjoys creating websites that look good and work
               smoothly. I love learning new things and always try to improve my
               skills with each project. I enjoy turning ideas into real,
               user-friendly websites using HTML, CSS, and JavaScript.
             </p>
-            <p class="noto-sans-font my-self">
+            <p class="noto-sans-font my-self animate-on-scroll fade-in-up">
               Things started back in 2020 during the lockdown period, when I
               passed my Senior Secondary Schooling and was thinking of learning
               something new. I started learning HTML and found it really
               interesting. Then I dived into the world of websites.
             </p>
-            <p class="noto-sans-font my-self">Technologies I use :-</p>
-            <ul class="technology fira-mono-font">
+            <p class="noto-sans-font my-self animate-on-scroll fade-in-up">
+              Technologies I use :-
+            </p>
+            <ul class="technology fira-mono-font animate-on-scroll fade-in-up">
               <li>HTML</li>
               <li>CSS</li>
               <li>JavaScript</li>
             </ul>
-            <p class="noto-sans-font">& Learning Something New Everyday</p>
+            <p class="noto-sans-font animate-on-scroll fade-in-up">
+              & Learning Something New Everyday
+            </p>
           </div>
         </section>
 
         <section id="qualification" class="qualification section-head">
-          <h2 class="fira-mono-font">
-            <span class="numbering">02.</span> Qualifications
+          <h2 class="fira-mono-font animate-on-scroll fade-in-up">
+            <span class="numbering">02.</span> My Qualifications
           </h2>
-          <div class="qualification-btns-container">
-            <button class="active-btn">10<sup>th</sup></button>
-            <button>12<sup>th</sup></button>
-            <button>Graduation</button>
-            <button>Diploma</button>
+          <div class="data-container" id="data-container">
+            <div class="qualification-btns-container">
+              <button
+                class="active-btn education-btn animate-on-scroll fade-in-up"
+                onclick="showContent('secondary', this)"
+              >
+                10<sup>th</sup>
+              </button>
+              <button
+                class="education-btn animate-on-scroll fade-in-up"
+                onclick="showContent('senior_secondary', this)"
+              >
+                12<sup>th</sup>
+              </button>
+              <button
+                class="education-btn animate-on-scroll fade-in-up"
+                onclick="showContent('graduation', this)"
+              >
+                Graduation
+              </button>
+              <button
+                class="education-btn animate-on-scroll fade-in-up"
+                onclick="showContent('diploma', this)"
+              >
+                Diploma
+              </button>
+            </div>
+            <div class="qualification-details" id="qualification-details">
+              <div class="qualification-heading animate-on-scroll fade-in-up">
+                <h3 class="noto-sans-font">Secondary Schooling</h3>
+              </div>
+              <div class="qualification-year animate-on-scroll fade-in-up">
+                <p class="fira-mono-font">2018</p>
+              </div>
+              <div class="qualification-data animate-on-scroll fade-in-up">
+                <p class="noto-sans-font">
+                  I completed my Secondary Schooling from the
+                  <strong>Central Board of Secondary Education (CBSE)</strong>
+                  in 2018 with 70% marks. During this time, I got my first
+                  computer, which sparked my curiosity about the internet and
+                  the things that exist on it. What started as a casual interest
+                  gradually turned into a passion. This early exposure laid the
+                  foundation for my journey into the world of technology and web
+                  development.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="projects" class="projects section-head">
+          <h2 class="fira-mono-font animate-on-scroll fade-in-up">
+            <span class="numbering">03.</span> Projects I've Made
+          </h2>
+          <div class="projects-secondary-container">
+            <div class="image-container animate-on-scroll fade-in-up">
+              <a href="http://aayushicare.com/" target="_blank" class="shade">
+                <img src="./assets/images/Project.jpg" alt="Project Image" />
+              </a>
+            </div>
+            <div class="projects-data-container">
+              <p
+                class="project-heading fira-mono-font animate-on-scroll fade-in-up"
+              >
+                Aayushi Hygiene And Care Private Limited
+              </p>
+              <div class="animate-on-scroll fade-in-up">
+                <p
+                  class="project-desc noto-sans-font"
+                >
+                  I developed and designed
+                  <a href="https://aayushicare.com/" target="_blank"
+                    >aayushicare.com</a
+                  >, a fully responsive, user‑friendly website that blends clean
+                  UI design with modern web features. Built using
+                  <strong>HTML, CSS, and JavaScript</strong>, the site also
+                  incorporates visual assets created in CorelDRAW. The project
+                  demonstrates my ability to craft intuitive layouts, optimize
+                  for multiple screen sizes.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="contact" class="contact section-head">
+          <h2 class="fira-mono-font animate-on-scroll fade-in-up">
+            <span class="numbering">04.</span> Contact
+          </h2>
+          <div class="contact-secondary-container">
+            <p class="contact-para noto-sans-font animate-on-scroll fade-in-up">
+              I am seeking an opportunity where I can effectively apply my
+              skills in Web Designing and Development to contribute to
+              meaningful projects, collaborate with a creative team, and
+              continue learning new technologies and trends that help me grow
+              both personally and professionally in the field.
+            </p>
+            <p class="call-para noto-sans-font animate-on-scroll fade-in-up">
+              Feel free to reach out to me through social media, email, or phone
+              at your convenience.
+            </p>
+            <a
+              href="tel:+91 9315283938"
+              class="telephone animate-on-scroll fade-in-up"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 
+           19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.08 4.18 
+           2 2 0 0 1 4.06 2h3a2 2 0 0 1 2 1.72 
+           12.05 12.05 0 0 0 .57 2.57 
+           2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.51-1.51
+           a2 2 0 0 1 2.11-.45 
+           12.05 12.05 0 0 0 2.57.57 
+           2 2 0 0 1 1.72 2z"
+                />
+              </svg>
+              +91 9315283938
+            </a>
           </div>
         </section>
       </div>
     </main>
+
+    <footer>
+      <p class="noto-sans-font">Built by Rishi</p>
+    </footer>
+
+    <script src="./assets/script.js"></script>
   </body>
 </html>

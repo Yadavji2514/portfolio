@@ -193,8 +193,8 @@ main {
 .section-head {
   color: var(--heading);
 }
-.about{
-  padding-top: 115px;
+.about {
+  padding-top: 120px;
 }
 .my-self-text-container {
   width: 65%;
@@ -212,18 +212,17 @@ main {
   content: "▹  ";
   color: var(--contrast);
 }
-.qualification{
-  padding-top: 115px;
+.qualification {
+  padding-top: 140px;
   display: flex;
   flex-direction: column;
   align-items: end;
 }
-.qualification-btns-container{
+.qualification-btns-container {
   display: flex;
   flex-direction: column;
-  margin-top: 30px;
 }
-button{
+button {
   background-color: var(--background);
   color: var(--text);
   font-family: "Fira Mono", monospace;
@@ -235,12 +234,150 @@ button{
   height: 50px;
   padding-top: 10px;
 }
-button:hover{
+button:hover {
   color: var(--contrast);
   background: var(--cards);
 }
-.active-btn{
+.active-btn {
   color: var(--contrast);
   background: var(--cards);
   border-right: 2px solid var(--contrast);
+}
+.data-container {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 80px;
+  gap: 30px;
+}
+.qualification-details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 70%;
+}
+.qualification-heading {
+  font-size: 24px;
+  justify-items: center;
+  color: var(--heading);
+}
+.qualification-year {
+  justify-items: center;
+  font-size: 22px;
+  color: var(--contrast);
+}
+.qualification-data {
+  color: var(--text);
+  text-align: justify;
+}
+.projects {
+  padding-top: 150px;
+}
+.projects-secondary-container {
+  margin-top: 80px;
+  display: flex;
+}
+.image-container {
+  width: 60%;
+  height: 300px;
+  display: inline-block;
+  border-radius: 10px;
+  line-height: 1;
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.image-container:hover {
+  outline: none;
+  transform: translate(-5px, -5px);
+  box-shadow: 8px 8px var(--contrast);
+}
+.image-container img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.projects-data-container {
+  width: 40%;
+}
+.project-heading {
+  font-size: 22px;
+  font-weight: 600;
+  text-align: end;
+  width: 90%;
+  justify-self: end;
+}
+.project-desc {
+  background-color: var(--cards);
+  padding: 15px;
+  position: relative;
+  margin-top: 30px;
+  width: 110%;
+  transform: translateX(-60px) !important; 
+  color: var(--text);
+  text-align: justify;
+  border-radius: 10px;
+}
+.project-desc a {
+  color: var(--contrast);
+}
+.contact {
+  padding-top: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact-secondary-container {
+  margin-top: 80px;
+  justify-items: center;
+}
+.contact-para {
+  width: 70%;
+  text-align: justify;
+  color: var(--text);
+}
+.call-para {
+  margin-top: 20px;
+  color: var(--text);
+}
+.telephone svg {
+  width: 24px;
+  height: 24px;
+}
+.telephone {
+  display: flex;
+  margin-top: 50px;
+  color: var(--contrast);
+  gap: 10px;
+  font-size: 24px;
+  border: 1px solid var(--contrast);
+  padding: 10px 20px;
+  border-radius: 5px;
+  line-height: 1;
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.telephone:hover {
+  transform: translate(-5px, -5px);
+  box-shadow: 8px 8px var(--contrast);
+}
+footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+  color: var(--text);
+}
+/* Base hidden state */
+.animate-on-scroll {
+  opacity: 0;
+  transition: all 0.8s ease-out;
+}
+.fade-in-up {
+  transform: translateY(30px);
+}
+.fade-in-left {
+  transform: translateX(-50px);
+}
+.fade-in-right {
+  transform: translateX(50px);
+}
+.visible {
+  opacity: 1;
+  transform: translate(0, 0);
 }
